@@ -287,6 +287,7 @@ b{
 }
 .contact{
     background-color: rgba(23, 41, 55, 1);
+    padding: 70px;
 }
 .icon{
     display: flex;
@@ -298,7 +299,7 @@ b{
     margin-right: 20px;
     margin-bottom: 20px;
     gap: 5px;
-    border: 2px solid orange;
+    border: 1px solid orange;
     padding: 10px;
     border-radius:5px ;
     display: flex;
