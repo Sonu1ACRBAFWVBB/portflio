@@ -13,6 +13,16 @@ body {
     height: 100%;
     width: 100%
 }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
 
 .hero-section {
     background-color: rgba(23, 41, 55, 1);
@@ -311,4 +321,113 @@ b{
     padding: 3px;
   
     
+}
+/* Base styles (already mobile-friendly) */
+/* Add responsive styles for tablets and desktops below */
+
+@media screen and (max-width: 1024px) {
+    .hero-content,
+    .my-skills,
+    .progress,
+    .progress-container,
+    .project-container,
+    .education-container {
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text, .hero-image {
+        width: 100%;
+    }
+
+    .skill {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .education-box {
+        width: 100%;
+        align-items: center;
+    }
+
+    .e {
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .circle {
+        margin-top: 10px;
+        align-self: center;
+    }
+
+    .progress-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .progress-box {
+        width: 90%;
+    }
+
+    .icon {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 18px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .para-one, .para-two, .description {
+        font-size: 16px;
+    }
+
+    .section-header, .heading, .contact-item {
+        font-size: 30px;
+    }
+
+    .skill-box {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .progress-btn button {
+        width: 90%;
+    }
+
+    .project-photo img {
+        width: 100%;
+        height: auto;
+    }
 }
